@@ -1,0 +1,122 @@
+/* RESET PAGE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #a0f4dc, #1d4b64);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* SECTION {JOGO} */
+section {
+    width: 35%;
+    height: 66%;
+    background: white;
+    border-radius: 15px;
+    position: relative;
+}
+
+#nomeJogo {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #1d4b64;
+    margin: 15px 0;
+}
+
+#descricao {
+    width: 95%;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 1rem;
+    color: #af4e4e;
+    text-align: justify;
+}
+
+#descricao p {
+    line-height: 1.4;
+}
+
+#descricao p span {
+    font-size: 1.3rem;
+    color: #1d4b64;
+}
+
+#separador {
+    width: 92%;
+    height: 1px;
+    background-color: #1d4b64;
+    margin: 20px auto;
+}
+
+#observacao {
+    width: 95%;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 1rem;
+    color: #af4e4e;
+    text-align: justify;
+}
+
+
+#jogador {
+    width: 95%;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 1rem;
+    color: #af4e4e;
+    text-align: justify;
+}
+
+#jogador input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #1d4b64;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #1d4b64;
+}
+
+#jogador input:focus {
+    outline: none;
+    border-color: #af4e4e;
+}
+
+#jogador button {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #1d4b64;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#jogador button:hover {
+    background-color: #af4e4e;
+}
+
+#dicas {
+    width: 95%;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #af4e4e;
+    text-align: center;
+}
+
+#tentativas {
+    width: 95%;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #af4e4e;
+    text-align: center;
+}
