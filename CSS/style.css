@@ -22,6 +22,7 @@ section {
     position: relative;
 }
 
+/* h1 = TITLE */
 #nomeJogo {
     text-align: center;
     font-size: 1.2rem;
@@ -29,6 +30,7 @@ section {
     margin: 15px 0;
 }
 
+/* DESCRIÇÃO DO JOGO */
 #descricao {
     width: 95%;
     margin: 20px auto;
@@ -47,6 +49,7 @@ section {
     color: #1d4b64;
 }
 
+/* LINHA EMBAIXO DA DESCRIÇÃO */
 #separador {
     width: 92%;
     height: 1px;
@@ -54,6 +57,7 @@ section {
     margin: 20px auto;
 }
 
+/* MOSTRANDO O PASSO A PASSO DO JOGO */
 #observacao {
     width: 95%;
     margin: 20px auto;
@@ -63,7 +67,7 @@ section {
     text-align: justify;
 }
 
-
+/* DIV {INPUT & BUTTON} */
 #jogador {
     width: 95%;
     margin: 15px auto;
@@ -103,13 +107,14 @@ section {
     background-color: #af4e4e;
 }
 
+/* DIV {DICAS, TENTATIVAS E RESULTADO} */
 #jogador-opcoes {
     width: 100%;
     height: 30%;
     padding: 5px 29px;
 }
 
-#jogador-opcoes div {
+#dicas {
     border: 1px solid #1d4b64;
     border-radius: 15px;
     padding: 15px;
@@ -126,9 +131,42 @@ section {
     font-weight: 400;
 }
 
+#tentativas {
+    border: 1px solid #1d4b64;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+    height: 50%; 
+    display: flex;
+    align-items: center;
+}
+
 #tentativas-jogador {
     font-size: 1.5rem;
     padding-left: 10px;
+    color: #c12929;
+    font-weight: 400;
+}
+
+#resultado {
+    border: 1px solid #1d4b64;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+    height: 100%; 
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#resultado h2 {
+    margin-bottom: 15px;
+}
+
+#resultado-jogador {
+    font-size: 1.5rem;
+    height: 83%;
+    width: 92%;
     color: #c12929;
     font-weight: 400;
 }
