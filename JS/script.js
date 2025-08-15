@@ -17,10 +17,12 @@ idElemento("numero").addEventListener("input", () => {
   idElemento("tentativas").style.display = "flex";
 });
 
+// Função referente ao botão chutar
 idElemento("btn").addEventListener("click", () => {
   const palpiteJogador = valorNumero("numero");
 
   // validações
+  // verificando se o valor do input é negativo ou está acima de 100
   if (isNegativo("numero")) {
     idElemento("resultado").style.display = "flex";
     idElemento("dicas").style.display = "none";
@@ -43,14 +45,30 @@ idElemento("btn").addEventListener("click", () => {
     idElemento("dicas").style.display = "none";
     idElemento("tentativas").style.display = "none";
 
+    // se acertar na primeira tentativa
     if (tentativas === 10) {
       idElemento("resultado-jogador").innerHTML =
         "Parabéns!! Você acertou na primeira tentativa!";
+    // quando ele acertar vai aparecer quantas tentativas restavam
     } else {
       idElemento(
         "resultado-jogador"
-      ).innerHTML = `Parabéns!! Você acertou na ${tentativas}ª tentativa!`;
+      ).innerHTML = `Parabéns!! Você acertou faltando ${tentativas} tentativa!`;
     }
+
+    setTimeout(() => {
+      // reinicia jogo
+      numberSecret = Math.floor(Math.random() * 100) + 1;
+      console.log(numberSecret);
+      tentativas = 10;
+      idElemento("tentativas-jogador").textContent = tentativas;
+      idElemento("resultado").style.display = "none";
+      idElemento("dicas").style.display = "flex";
+      idElemento("tentativas").style.display = "flex";
+      idElemento("dicas-jogador").textContent = "";
+      idElemento("numero").value = "";
+    }, 3000);
+
     return; // não precisa continuar
   }
 
